@@ -20,7 +20,7 @@ function clicked() {
     }
     function checkValue() {
         let Bingo=firstCard.dataset.name === secondCard.dataset.name
-            Bingo ? disable(): unflip(),addOne();
+            Bingo ? disable(): unflip();
     }
     function addOne(){
         count++;
@@ -38,6 +38,7 @@ function clicked() {
         setTimeout(() => {
             firstCard.classList.remove('flip');
             secondCard.classList.remove('flip');
+            addOne();
             anotherGues();
         }, 1500)
     }

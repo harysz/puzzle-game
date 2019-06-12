@@ -21,7 +21,7 @@
     border-radius:30px; 
     position: absolute;
     height: 90%;   
-    background-color: rgba(163, 119, 253);
+    background-color: rgb(86, 84, 194);
     width: 90%;
     padding: 10px;
 }
@@ -47,7 +47,7 @@ body{
 .failCount{
     visibility:hidden;
     border-radius: 10px;
-    background: rgba(163, 119, 253);
+    background: rgb(241, 76, 64);
     width: 140px;
     height: 30px;
     font-weight: 900;

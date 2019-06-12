@@ -1,0 +1,63 @@
+.container{
+    height: 100%;
+    width: 100%;
+    margin: 1% 5%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns:auto auto auto auto; 
+    grid-gap: 15px;
+    perspective: 1000px;
+}
+.card{
+    
+    width: 220px;
+    position: relative;
+    height: 260px;
+    transition: .3s;
+    transform-style: preserve-3d;
+    align-items: center;
+}
+.frontFace,.backFace{
+    border-radius:30px; 
+    position: absolute;
+    height: 90%;   
+    background-color: rgba(163, 119, 253);
+    width: 90%;
+    padding: 10px;
+}
+.frontFace:hover,.backFace:hover{
+    background: #fff 
+}
+.flip{
+    transform: rotateY(180deg); 
+    backface-visibility: hidden;
+}
+body{
+    width: 800px;
+    height: 850px;
+    background: #999 url('./bacgroundImg.jpg') no-repeat center center;
+    background-size:1600px 1200px;
+}
+.backFace{
+    z-index: 999;
+}
+.frontFace{
+    transform: rotateY(180deg);
+}
+.failCount{
+    visibility:hidden;
+    border-radius: 10px;
+    background: rgba(163, 119, 253);
+    width: 140px;
+    height: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 7%;
+}
+.failed{
+    visibility: visible;
+}
+.mega{
+    width: 50%;
+}
